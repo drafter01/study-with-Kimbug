@@ -1,0 +1,25 @@
+{
+  "name": "study-with-Kimbug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1" ,
+    "node-sass" : "node-sass",
+    "sass" : "node-sass -w -r styles/main.scss ./style.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drafter01/study-with-Kimbug.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drafter01/study-with-Kimbug/issues"
+  },
+  "homepage": "https://github.com/drafter01/study-with-Kimbug#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
