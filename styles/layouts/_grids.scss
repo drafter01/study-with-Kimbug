@@ -50,7 +50,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns; // 이렇게 변수를 �
 
   // 모든 col-로 시작하는 class를 잡아야함
   [class^='col-'] {
-    padding: 0 $gutter/2;
+    padding: 0 $gutter / 2;
   }
 
   @for $i from 1 through $sm-columns {
@@ -64,7 +64,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns; // 이렇게 변수를 �
     padding: 0 $md-margin;
 
     @for $i from 1 through $md-columns {
-      .col-sm-#{$i} {
+      .col-md-#{$i} {
         width: percentage($i / $md-columns);
       }
     }
@@ -75,7 +75,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns; // 이렇게 변수를 �
     padding: 0;
 
     @for $i from 1 through $lg-columns {
-      .col-sm-#{$i} {
+      .col-lg-#{$i} {
         width: ($lg-unit + $gutter) * $i;
       }
     }
