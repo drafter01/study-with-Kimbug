@@ -12,19 +12,9 @@
       @include flexbox(end);
     }
   }
-  .gnb-search-button {
+  .gnb-icon-button.is-search {
     margin-right: 4px;
-  }
-  &-icon-button {
-    @include flexbox;
-    width: 32px;
-    height: 32px;
-    font-size: 24px;
-    color: $secondary;
-  }
-
-  &-menu-button {
-    color: $blue;
+    // Search 버튼에 4px를 준것은 순서(레이아웃)때문에 준거지 search 아이콘 자체의 특성이 아님
   }
 
   .logo {
