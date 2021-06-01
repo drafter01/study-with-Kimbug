@@ -19,25 +19,24 @@
   &-button {
     width: $button-size;
     height: $button-size;
-    border: 3px solid $white;
     overflow: hidden;
     border-radius: 50%;
     background-image: url('./assets/images/img-user-default.png');
     background-position: center, center;
     background-repeat: no-repeat;
     background-size: contain;
+    border: 3px solid $white;
     transition: border-color 200ms ease-in-out;
+
+    &:hover {
+      border-color: $blue;
+    }
 
     img {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
-    }
-
-    &:hover,
-    &.is-active {
-      border-color: $blue;
     }
   }
 
@@ -93,10 +92,10 @@
       height: 44px;
       padding: 0 8px;
       border-radius: 2px;
-    }
 
-    &:hover {
-      background-color: $background;
+      &:hover {
+        background-color: $background;
+      }
     }
   }
 }
