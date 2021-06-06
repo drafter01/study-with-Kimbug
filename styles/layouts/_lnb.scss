@@ -1,4 +1,6 @@
 .lnb {
+  $lnb-heigth-sm: 40px;
+  $lnb-heigth-md: 50px;
   $lnb-link-padding: 8px;
   $grid-margin: $sm-margin + $gutter / 2;
 
@@ -7,7 +9,7 @@
 
   &-list {
     @include inline-flexbox(start);
-    height: 40px;
+    height: $lnb-heigth-sm;
     padding: 0 $grid-margin - $lnb-link-padding;
     margin-left: $grid-margin;
     white-space: nowrap;
@@ -26,9 +28,28 @@
       @include inline-flexbox;
       @include text-style(13, $dark);
       padding: 10px $lnb-link-padding;
-      height: 40px;
+      height: $lnb-heigth-sm;
       font-weight: 700;
       border-bottom: 2px solid transparent;
+    }
+  }
+
+  @include responsive(T) {
+    overflow-x: visible;
+    height: $lnb-heigth-md;
+    border-bottom: 1px solid $border;
+
+    &-list {
+      height: auto;
+      padding: 0;
+      margin-left: 0;
+      border-bottom: 0;
+    }
+    &-item {
+      a {
+        @include text-style(14);
+        height: $lnb-heigth-md;
+      }
     }
   }
 }
