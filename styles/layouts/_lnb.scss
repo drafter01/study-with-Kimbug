@@ -31,6 +31,10 @@
       height: $lnb-heigth-sm;
       font-weight: 700;
       border-bottom: 2px solid transparent;
+
+      &:hover {
+        color: $blue;
+      }
     }
   }
 
